@@ -6,10 +6,10 @@
     include 'closeconnection.php';
 ?>
 <?php include 'header.php'; ?>
-    <h2 class="text-2xl font-bold">Categories</h2>
+    <h2 class="text-2xl font-bold">News</h2>
     <hr class="h-1 bg-red-500">
     <div class="my-3 flex justify-end">
-        <a href="createnews.php" class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded-lg">Add Category</a>
+        <a href="createnews.php" class="bg-red-500 hover:bg-red-600 text-white px-3 py-2 rounded-lg">Add News</a>
     </div>
     <table class="w-full">
         <tr>

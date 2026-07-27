@@ -5,7 +5,12 @@ if(isset($_POST['create']))
     $new_date = $_POST['new_date'];
     $name = $_POST['title'];
     $description = $_POST['description'];
-    $photopath = $_FILES['photopath'];
+
+    $filename = $_FILES['photopath']['name'];
+    $tempname = $_FILES['photopath']['tmp_name'];
+    $upload_dir = "uploads/" . $filename;
+    $photopath = $upload_dir;
+    move_uploaded_file($tempname, $upload_dir);
       include 'dbconnection.php';
     $qry = "INSERT INTO news(category_id, new_date, title, description, photopath) VALUES($category_id, '$new_date', '$title', '$description', '$photopath')";
     include 'dbconnection.php';
