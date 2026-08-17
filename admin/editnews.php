@@ -14,9 +14,9 @@ include 'closeconnection.php';
                 <option value="<?php echo $cat['id']; ?>"><?php echo $cat['name']; ?></option>
             <?php } ?>
         </select>
-        <input type="date" name="news_date" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter News Date">
-        <input type="text" name="title" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter News Title">
-        <textarea name="description" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter News Content"></textarea>
+        <input type="date" name="news_date" value="<?php echo $row['news_date']; ?>" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter News Date">
+        <input type="text" name="title" value="<?php echo $row['title']; ?>" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter News Title">
+        <textarea name="description" class="w-full block border p-2 rounded-lg shadow my-5" placeholder="Enter News Content"><?php echo $row['description']; ?></textarea>
         <input type="file" name="photopath" class="w-full block border p-2 rounded-lg shadow my-5">
         <div class="flex justify-center gap-4">
             <input type="submit" name="create" class="bg-blue-500 px-3 py-2 rounded-lg text-white" value="Create News">
