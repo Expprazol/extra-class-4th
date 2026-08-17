@@ -9,7 +9,7 @@
         </div>
     </div>
 
-    <!-- Latest News  -->
+    <!-- this is last news  -->
     <div class="px-4 sm:px-32 py-10">
         <h2 class="text-3xl font-bold mb-6 text-gray-800">Latest News</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
